@@ -1,0 +1,437 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Lora', serif;
+*/
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    position: fixed;
+    background-color: #fc892b;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.header__inner {
+    width: 1124px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 170px;
+}
+
+.header__logo img {
+    width: 170px;
+}
+
+.header__nav {
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav__item a {
+    padding: 34px 15px;
+}
+
+.nav__item:hover {
+    background-color: #69bcf4;
+}
+
+.nav__submenu {
+    display: none;
+    background-color: #69bcf4;
+    position: absolute;
+    width: 100%;
+    margin-top: 150px;
+    font-size: 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.submenu__item {
+    padding: 10px 15px;
+}
+
+.header__nav li:hover .nav__submenu {
+    display: flex;
+}
+
+.header__loginAndBasket{
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: white;
+    font-size: 14px;
+}
+
+.header__loginAndBasket {
+    display: flex;
+}
+
+.header__login, .header__basket {
+    display: flex;
+    align-items: center;
+    padding: 27px 15px;
+
+}
+
+.header__login:hover {
+    background-color: #69bcf4;
+}
+
+.header__basket:hover {
+    background-color: #69bcf4;
+}
+
+.header__icon {
+    margin-left: 8px;
+    width: 25px;
+}
+
+.startPlan {
+    padding-top: 100px;
+    width: 100%;
+    height: 470px;
+    background-image: url('/Users/davidfleck/Desktop/Club Crema/ClubCremaWebSite/Images/beans-01.jpg'); 
+    display: flex;
+    justify-content: center;
+}
+
+.startPlan__inner {
+    width: 1124px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.startPlan__title {
+    font-size: 50px;
+    font-family: 'Barlow Condensed';
+    font-weight: bold;
+    color: white;
+    margin-top: 90px;
+}
+
+.startPlan__title span {
+    color: #69bcf4;
+}
+
+.btn {
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: white;
+    background-color:  #fc892b;
+    padding: 18px 30px 18px 30px;
+    border-radius: 8px;
+    box-shadow: -3px 3px white;
+    
+}
+
+.startPlan__btn {
+    margin-top: 50px;
+    width: 165px;
+}
+
+.browseBeans {
+    background-color: #69bcf4;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+}
+
+.browseBeans__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.browseBeans__text {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    width: 845px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.browseBeans__btn {
+    margin-top: 30px;
+}
+
+.divider {
+    height: 15px;
+}
+
+.about {
+    height: 470px;
+    display: flex;
+    justify-content: center;
+}
+
+.about__inner {
+    width: 1124px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.aboutRHJustified {
+    align-items: flex-end;
+    text-align: right;
+}
+
+.aboutLHJustified {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.about__text {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    line-height: 19px;
+    margin-top: 6px;
+}
+
+.about__title {
+    font-size: 60px;
+    font-family: 'Barlow Condensed';
+    font-weight: bold;
+    color: white;
+}
+
+.about__title--orange {
+    color: #fc892b;
+}
+
+.about__container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container__RHJustified {
+    justify-content: flex-end;
+}
+
+.container__LHJustified {
+    justify-content: flex-start;
+}
+
+.about__highlight {
+    font-size: 18px;
+    font-family: 'Lora';
+    color: #fc892b;
+    line-height: 30px;
+}
+
+.about__highlightRight {
+    margin-right: 30px;
+}
+
+.about__highlightLeft {
+    margin-left: 30px;
+}
+
+.about--compromise {
+    background-image: url('/Users/davidfleck/Desktop/Club Crema/ClubCremaWebSite/Images/berries.jpg');
+    background-position: 50% 65%;
+    background-size: 100%;
+}
+
+.compromise--text {
+    width: 450px;
+    border-left: #fc892b 4px solid;
+}
+.compromise--highlight {
+    width: 185px;
+    text-align: right;
+}
+
+.about--flexible {
+    background-image: url('/Users/davidfleck/Desktop/Club Crema/ClubCremaWebSite/Images/beanbags2.jpg');
+    background-position: 0% 42%;
+    background-size: 130%;
+}
+
+.flexible--text {
+    width: 450px;
+    padding-right: 20px;
+    border-right: #fc892b 4px solid;
+}
+
+.flexible--highlight {
+    width: 170px;
+}
+
+.about--partnerships {
+    background-image: url('/Users/davidfleck/Desktop/Club Crema/ClubCremaWebSite/Images/fistbump.jpg');
+    background-position: 100% 70%;
+}
+
+.partnerships--text {
+    width: 565px;
+}
+
+.about--plan {
+    background-image: url('/Users/davidfleck/Desktop/Club Crema/ClubCremaWebSite/Images/calander.jpg');
+}
+
+.plan--text {
+    width: 460px;
+}
+
+.footer {
+    height: 410px;
+    background-color: #69bcf4;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer__inner {
+    width: 1124px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__container {
+    width: 1124px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer__nav {
+    width: 510px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__list ul {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+}
+
+.nav__list--listHead {
+    font-size: 20px;
+    color: #fc892b;
+    margin-bottom: 27px;
+}
+
+.nav__list li {
+    margin-bottom: 16px;
+}
+
+
+.signUp__title {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 20px;
+    color: #fc892b;
+    margin-bottom: 16px;
+}
+
+.signUp__text {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    width: 420px;
+    margin-bottom: 12px;
+    line-height: 24px;
+}
+
+.signUp__inputAndBtn {
+    width: 420px;
+    display: flex;
+}
+
+.signUp__input {
+    font-family: 'Poppins';
+    font-style: italic;
+    width: 380px;
+    height: 45px;
+    padding-left: 25px;
+}
+
+.signUp__btn__img {
+    width: 100%;
+}
