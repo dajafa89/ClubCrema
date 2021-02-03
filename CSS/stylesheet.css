@@ -481,6 +481,10 @@ header {
     padding: 60px 0px;
 }
 
+.start-plan-title {
+    width: 70%;
+}
+
 .start-plan-title h1 {
     font-size: 50px;
     font-family: 'Barlow Condensed';
@@ -493,7 +497,6 @@ header {
     font-weight: medium;
     font-size: 14px;
     color: #69bcf4;
-    width: 75%;
     margin-top: 10px;
     padding-bottom: 25px;
 }
@@ -526,10 +529,14 @@ header {
     padding: 20px 0px;
 }
 
+.start-plan-options {
+    width: 70%;
+}
+
 .start-plan-options p {
     font-family: 'Poppins';
     font-weight: medium;
-    font-size: 12px;
+    font-size: 14px;
     color: #69bcf4;
 }
 
@@ -542,16 +549,20 @@ header {
     width: 100%;
 }
 
+.options-container-grind {
+    gap: 15px;
+}
+
 .factor-option {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-right: 30px;
     margin-bottom: 15px;
     border: solid #fc892b 1px;
     padding: 15px;
     min-width: 25%;
+    max-width: 44%;
     min-height: 60px
 }
 
@@ -567,4 +578,124 @@ header {
 
 .option-text-bold {
     font-weight: bold;
+}
+
+.factor--coffee-type .factor-options-container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.price h2 {
+    padding: 0px;
+}
+
+.factor-option--product {
+    min-width: 100%;
+}
+
+.factor-option--product input {
+    padding-right: 10px;
+}
+
+.delivery-main-container h2, .delivery-main-container span {
+    color: white;
+}
+
+.delivery-main-container span {
+    font-family: 'Poppins';
+}
+
+.delivery-main-container p {
+    color: white;
+}
+
+.delivery-main-container {
+    background-color: #fc892b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    padding: 50px 0;
+}
+
+.delivery-range-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: solid white 2px
+}
+
+.delivery-range-container input  {
+    width: 80%;
+    padding: 30px 0 20px 0;
+}
+
+.range-input-limits {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.range-summary {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.range-bold {
+    color: #69bcf4;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.range-input-limits span {
+    font-size: 14px;
+}
+
+.delivery-suggested-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.delivery-suggested-container p {
+    color: white;
+}
+
+.presets-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.preset-frequency {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 50px 0 50px;
+}
+
+.preset-frequency h2 {
+    font-size: 18px;
+}
+
+.preset-frequency input {
+    margin-top: 20px;
+    padding: 0;
+}
+
+.preset-frequency span {
+    text-align: center;
+    font-size: 12px;
 }
